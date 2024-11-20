@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="./src/assets/img/logo_machine_learning.png" alt="Logo Talent Rank" width="220"/>
+</div>
+
 # Trabalho Prático - Problema da Mochila
 
 ## Descrição do Projeto
