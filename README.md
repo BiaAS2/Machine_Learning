@@ -2,7 +2,7 @@
     <img src="./src/assets/img/logo_machine_learning.png" alt="Logo Talent Rank" width="220"/>
 </div>
 
-# Trabalho Prático - Problema da Mochila
+# Trabalho Final - Implementação de Algoritmos de Machine Learning
 
 ## Descrição do Projeto
 
@@ -10,30 +10,41 @@ Este projeto implementa Machine Learning para resolver um problema real. Criamos
 
 ## Documentação
 
-- BAIXAR PDF -> [MACHINE LEARNING](./docs/Algoritmo%20Genético.pdf)
+- RELATÓRIO -> [MACHINE LEARNING](./docs/Algoritmo%20Genético.pdf)
 
 ## Funcionalidades
 
-- ...
+### Classificação de Desenvolvedores
 
-## Métodos Implementados:
+- Avalia o nível do desenvolvedor (Junior, Pleno ou Senior)
 
-- **Árvore de Decisão**: ...
-- **KNN**: ...
+### Aprendizado Contínuo
+
+- O sistema aprende com cada nova classificação
+- Recebe um conjunto de respostas do usuário (um vetor com 40 respostas)
+
+### Análise de Desempenho
+
+- Mostra gráfico de evolução da acurácia ao longo do tempo
+- Exibe matriz de confusão para análise de erros
 
 ## Testes e Resultados
 
----
+Por ser uma base de dados simples, não teve muita diferença na realização dos testes com os dois algoritmos de classificação.
 
 ### Gráficos das Evoluções
 
-#### Graficos do Torneio
+#### **Acurácia**
 
-![Gráficos](./src/assets/img/grafico%20do%20torneio.png)
+![Gráficos](./src/assets/img/acuracia.png)
 
-#### Graficos da Roleta
+#### **Resultado e Sugestões**
 
-![Gráficos](./src/assets/img/grafico%20da%20roleta.png)
+![Gráficos](./src/assets/img/console.png)
+
+### **Matrix de Confusão**
+
+![Gráficos](./src/assets/img/matrix_confusao.png)
 
 ## Conclusão
 
@@ -49,7 +60,7 @@ Este projeto implementa Machine Learning para resolver um problema real. Criamos
 - [Renato Noronha](https://www.linkedin.com/in/renatonoronha/)
 - [Túlio Inácio](https://www.linkedin.com/in/t%C3%BAlio-in%C3%A1cio-767244276/)
 
-Data: **29 de novembro de 2024**
+Data: **06 de dezembro de 2024**
 
 ## Docente do Projeto
 
