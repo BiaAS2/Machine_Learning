@@ -1,8 +1,8 @@
-class BD_Questions : 
+class BD_Perguntas :
   def __init__(self) :
     self.soft_skills = {
       'Comunicação':[
-        "Você se sente confortável falando em público?", 
+        "Você se sente confortável falando em público?",
         "Você acredita que consegue explicar conceitos complexos de forma simples?"
       ],
       'Trabalho em equipe' : [
@@ -65,7 +65,7 @@ class BD_Questions :
         "Você sabe como calcular os custos de recursos na nuvem?"
       ],
       'Javascript' : [
-        "Você já utilizou JavaScript para criar interatividade em um site?"
+        "Você já utilizou JavaScript para criar interatividade em um site?",
         "Você conhece a diferença entre var, let e const no JavaScript?"
       ],
       'Adobe creative suite' : [
@@ -85,4 +85,6 @@ class BD_Questions :
         "Você sabe usar scripts C# para movimentar objetos em Unity?"
       ]
     }
-  
+
+    # Respostas possíveis para todas as perguntas
+    self.possiveis_respostas = ['NAO', 'PROVAVELMENTE NAO', 'NAO SEI', 'PROVAVELMENTE SIM', 'SIM']

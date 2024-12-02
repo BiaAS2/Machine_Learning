@@ -5,7 +5,7 @@ from knn_classificador import treinar_knn, prever_nivel
 def carregar_perguntas():
     """
     Método para carregar e retornar um dicionário de questões.
-    
+
     Retorna:
     - Um dicionário de perguntas (Soft e Hard skills)
     """
@@ -29,21 +29,21 @@ def obter_resposta_validada(pergunta):
 
     Parâmetros:
     - pergunta (str): A pergunta a ser exibida ao usuário.
-    
+
     Retorna:
     - str: A resposta válida selecionada pelo usuário.
     """
-    
+
     # Respostas válidas
-    respostas_validas = BD_Perguntas().possiveis_respostas 
-    
+    respostas_validas = BD_Perguntas().possiveis_respostas
+
     # Loop até que o usuário forneça uma resposta válida
     while True:
         print(f"\n{pergunta}")
         print("Opções de resposta:")
         for i, resp in enumerate(respostas_validas, 1):
             print(f"{i}. {resp}")
-        
+
         try:
             resposta_usuario = int(input("Escolha uma opção de resposta (1-5): "))
             if 1 <= resposta_usuario <= 5:
@@ -51,7 +51,7 @@ def obter_resposta_validada(pergunta):
             print("Por favor, digite um número entre 1 e 5.")
         except ValueError:
             print("Por favor, digite um número válido.")
-    
+
 def exibir_sugestoes(sugestoes):
     """
     Método para formatar a saída das sugestões no console
@@ -60,9 +60,9 @@ def exibir_sugestoes(sugestoes):
     - nivel: classificação do usuário (Júnior, Pleno, Sênior)
     - sugestoes: Links do site RoadMap de aprimoramento profissional para cada tipo de nível
 
-    Retorna: 
-    - Uma string formatada das sugestões no console    
-    
+    Retorna:
+    - Uma string formatada das sugestões no console
+
     """
     print("\n=== SUGESTÕES PARA VOCÊ ===")
     for linha in sugestoes:
@@ -73,7 +73,7 @@ def TalentRank_KNN():
     todas_perguntas = carregar_perguntas()
     respostas = []
     sugestoes_por_nivel = Sugestoes_Nivel()
-    
+
     # Exibe as perguntas carregadas e interage com o usuário para obter respostas
     print("\n=== Seja bem-vindo(a) ao Talent Rank!! ===")
     print("=== Sistema de Avaliação de Desenvolvedores ===")
