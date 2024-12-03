@@ -35,7 +35,7 @@ def obter_resposta_validada(pergunta):
     """
     
     # Respostas válidas
-    respostas_validas = BD_Perguntas().possiveis_respostas 
+    respostas_validas = BD_Perguntas().possiveis_respostas
     
     # Loop até que o usuário forneça uma resposta válida
     while True:

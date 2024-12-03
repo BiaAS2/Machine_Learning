@@ -21,7 +21,7 @@ def treinar_dt():
   # Dividir o conjunto de dados em treinamento e teste
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-  # Normalizar as características para melhorar o desempenho do KNN
+  # Normalizar as características para melhorar o desempenho da Árvore de Decisão
   scaler = StandardScaler()
   X_train_scaled = scaler.fit_transform(X_train)
   X_test_scaled = scaler.transform(X_test)
@@ -36,7 +36,6 @@ def treinar_dt():
   y_pred = dt_classifier.predict(X_test_scaled)
 
   # Avaliar a acurácia do modelo
-  y_pred = dt_classifier.predict(X_test_scaled)
   accuracy = accuracy_score(y_test, y_pred)
   print("\nAccuracy:", accuracy)
   print("Classification Report:")
@@ -48,10 +47,10 @@ def treinar_dt():
 
 # Função para prever o nível com base na pontuação
 def prever_nivel_DT(dt_classifier, scaler, pontuacao_usuario):
-    # Normalizar a pontuação do usuário para prever
-    pontuacao_normalizada = scaler.transform([pontuacao_usuario])
-    nivel_previsto = dt_classifier.predict(pontuacao_normalizada)
-    return nivel_previsto[0]
+  # Normalizar a pontuação do usuário para prever
+  pontuacao_normalizada = scaler.transform([pontuacao_usuario])
+  nivel_previsto = dt_classifier.predict(pontuacao_normalizada)
+  return nivel_previsto[0]
 
 
 def exibir_matrix_confusao(y_test, y_pred):

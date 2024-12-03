@@ -26,17 +26,22 @@ def treinar_knn():
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
-    # Treinar o modelo KNN com k=3
+    # Inicializando o classificador do KNN
     knn_classificador = KNeighborsClassifier(n_neighbors=3)
+
+    # Treinar o modelo KNN
     knn_classificador.fit(X_train_scaled, y_train)
 
-    # Avaliar a acurácia do modelo
+    # Fazendo previsões no conjunto de teste
     y_pred = knn_classificador.predict(X_test_scaled)
+
+    # Avaliar a acurácia do modelo
     accuracy = accuracy_score(y_test, y_pred)
     print("\nAccuracy:", accuracy)
     print("Classification Report:")
     print(classification_report(y_test, y_pred))
 
+    # Chama o método para mostrar a matrix de confusão
     exibir_matrix_confusao(y_test, y_pred)
 
     return knn_classificador, scaler

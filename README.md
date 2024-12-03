@@ -6,11 +6,11 @@
 
 ## Descrição do Projeto
 
-Este projeto implementa Machine Learning para resolver um problema real. Criamos o Talent Rank para ajudar usuários que já estão ingressados na área da Tecnologia da Informação, para que possam descobrir ou aperfeiçoar seu posicionamento profissional. Através de perguntas formuladas por uma pesquisa aprofundada, facilitando os usuários a procurararem por uma vaga na qual suas habilidades se encaixam, ou para ajudar empresas que procuram funcionários qualificados para o cargo específico.
+Este projeto implementa Machine Learning para resolver um problema real. Criamos o Talent Rank para ajudar usuários que já estão ingressados na área da Tecnologia da Informação, para que possam descobrir ou aperfeiçoar seu posicionamento profissional. Através de perguntas formuladas por uma pesquisa aprofundada, facilitando os usuários a procurararem por uma vaga na qual suas habilidades se encaixam.
 
 ## Documentação
 
-- RELATÓRIO -> [MACHINE LEARNING](./docs/Algoritmo%20Genético.pdf)
+- RELATÓRIO -> [MACHINE LEARNING](https://docs.google.com/document/d/1gJrRUmYeiRg7VIcdr1QnHPp4aN0GHifqETSycVuTorA/edit?tab=t.0)
 
 ## Funcionalidades
 
@@ -34,21 +34,31 @@ Por ser uma base de dados simples, não teve muita diferença na realização do
 
 ### Gráficos das Evoluções
 
-#### **Acurácia**
+#### **Acurácia Árvore de Decisão**
 
-![Gráficos](./src/assets/img/acuracia.png)
+![Gráficos](./src/assets/img/acuracia_AD.png)
+
+### **Matrix de Confusão - Árvore de Decisão**
+
+![Gráficos](./src/assets/img/matrix_confusao_AD.png)
+
+#### **Acurácia KNN**
+
+![Gráficos](./src/assets/img/acuracia_KNN.png)
+
+### **Matrix de Confusão - KNN**
+
+![Gráficos](./src/assets/img/matrix_confusao_KNN.png)
 
 #### **Resultado e Sugestões**
 
 ![Gráficos](./src/assets/img/console.png)
 
-### **Matrix de Confusão**
-
-![Gráficos](./src/assets/img/matrix_confusao.png)
-
 ## Conclusão
 
----
+Analisando os resultados de ambos, a Árvore de Decisão alcançou uma acurácia maior com menos exemplos de usuários do que o KNN. O KNN, por sua vez, precisou de uma banco de dados com mais de 200 exemplos de usuários para que alcançasse a acurácia de 100%.
+
+Observou-se que, com o algoritmo de Árvore de Decisão para classificar diferentes usuários com seus respectivos níveis, obteve melhores resultados, procurando um melhor “Nó” ou Folha para encontrar o melhor caminho de solução.
 
 ### Trabalho desenvolvido por:
 
