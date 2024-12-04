@@ -4,3 +4,5 @@ job_vacancies.csv
 embeds.json
 .env
 dist
+.idea
+.vscode
