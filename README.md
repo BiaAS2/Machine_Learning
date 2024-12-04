@@ -10,7 +10,7 @@ Este projeto implementa Machine Learning para resolver um problema real. Criamos
 
 ## Documentação
 
-- RELATÓRIO -> [MACHINE LEARNING](https://docs.google.com/document/d/1gJrRUmYeiRg7VIcdr1QnHPp4aN0GHifqETSycVuTorA/edit?tab=t.0)
+- RELATÓRIO -> [MACHINE LEARNING](./docs/Relatório%20Talent%20Rank.pdf)
 
 ## Funcionalidades
 
@@ -30,7 +30,7 @@ Este projeto implementa Machine Learning para resolver um problema real. Criamos
 
 ## Testes e Resultados
 
-Por ser uma base de dados simples, não teve muita diferença na realização dos testes com os dois algoritmos de classificação.
+Fizemos dois testes diferentes, alterando o tamanho da Base de Dados e algumas métricas dos Algoritmos de Classificação.
 
 ### Gráficos das Evoluções
 
@@ -38,7 +38,7 @@ Por ser uma base de dados simples, não teve muita diferença na realização do
 
 ![Gráficos](./src/assets/img/acuracia_AD.png)
 
-### **Matrix de Confusão - Árvore de Decisão**
+#### **Matrix de Confusão - Árvore de Decisão**
 
 ![Gráficos](./src/assets/img/matrix_confusao_AD.png)
 
@@ -46,11 +46,11 @@ Por ser uma base de dados simples, não teve muita diferença na realização do
 
 ![Gráficos](./src/assets/img/acuracia_KNN.png)
 
-### **Matrix de Confusão - KNN**
+#### **Matrix de Confusão - KNN**
 
 ![Gráficos](./src/assets/img/matrix_confusao_KNN.png)
 
-#### **Resultado e Sugestões**
+### **Resultado e Sugestões**
 
 ![Gráficos](./src/assets/img/console.png)
 
